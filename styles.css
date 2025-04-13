@@ -19,7 +19,7 @@ body{
 }
 
 .grid-container{
-    background-image: url(background.webp);
+    background-image: url(images/background.webp);
     border: 1px #FFFFFF;
     display: grid;
     grid-template-columns: 1fr 1fr;
