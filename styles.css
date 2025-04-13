@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-wrap: normal;
     overflow-wrap: normal;
+    overflow-x: hidden;
 }
 
 body{
@@ -29,6 +30,8 @@ body{
     gap: 10px;
     margin: auto;
     text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
     
 }
 
@@ -119,11 +122,16 @@ input, textarea, select{
 
 }
 
-@media only screen and (max-width: 500px) { /*pantallas chicas*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) { /*pantallas chicas*/
     body{
         font-size: 14px;
     }
-    .container{
+    .grid-container{
         grid-template-columns: 1fr;
     }
 }
@@ -132,7 +140,7 @@ input, textarea, select{
     body{
         font-size: 18px;
     }
-    .container{
+    .grid-container{
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -141,7 +149,7 @@ input, textarea, select{
     body{
         font-size: 18px;
     }
-    .container{
+    .grid-container{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
