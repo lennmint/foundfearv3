@@ -4,66 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Found Fear Proyect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
-    <!--header-->
-    <header>
-        <img src="logo.jpg" alt="logo del proyecto">
-        <h1>Found Fear</h1>
-        <h2>A place made for mockumentary horror lovers</h2>
-    </header>
 
-    <!--barra navegadora-->
-    <nav>
-        <ul>
-            <li><a href="">inicio</a></li>
-            <li><a href="">catálogo</a></li>
-            <li><a href="">contacto</a></li>
-        </ul>
-    </nav>
-    
-    <main>
+    <!--Nuevo head, main, menu y footer-->
+    <div class="grid-container">
 
-        <video controls width="500" height="300">
-            <source src="video.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video
-        </video>
+        <header class="header">
+            <img src="logo.webp" alt="logo de found fear">
+            <h1>Found Fear</h1>
+            <h2>A place made for mockumentary horror lovers</h2>
+        </header>
 
-        <section>
-
-            <!--Lista desordenada-->
-            <h2>Sub-géneros</h2>
-            <ul>
-            <li>suspenso</li>
-            <li>fantasmal</li>
-            <li>zombies</li>
-            <li>slasher</li>
+        <nav class="menu">
+            <ul class="flex-menu">
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">catálogo</a></li>
+                <li><a href="#">contacto</a></li>
             </ul>
+        </nav>
 
-            <!--Lista ordenada-->
-            <h2>Tier List</h2>
-            <ol>
-            <li><img src="AASB.jpg" alt="as above so below poster"></li> 
-            <li>blair witch</li>
-            </ol>
+        <section class="main">
 
-            <iframe src="https://youtu.be/X_BaqNzdGXY?si=yASYbr8daLVtQH5y" width="360" height="215" frameborder="0"></iframe>
+            <!--AASB reseña-->
+            <div class="card">
+                <img src="aasb.webp" alt="poster de As Above So Below">
+                <h3>As Above So Below</h3>
+                <p>
+                    Reseña:
+                    Kilómetros y kilómetros de tortuosas catacumbas yacen 
+                    bajo las calles de París, plagadas de incontables almas.
+                    Cuando un equipo de exploradores se aventura en este desconocido laberinto, 
+                    se descubre cuál fue la verdadera función de esta ciudad.
+                </p>
+            </div>
+            <!--BW reseña-->
 
+            <div class="card">
+                <img src="BW.webp" alt="poster de Blair Witch">
+                <h3>Blair Witch</h3>
+                <p>
+                    Reseña:
+                    Unos jóvenes investigan la desaparición de la hermana de uno de ellos, 
+                    de quien se perdió el rastro en 1994 en un bosque vinculado a la leyenda de la bruja de Blair. 
+                    Cuando llegan al lugar, conocen a un grupo de personas que se ofrecen a guiarlos, 
+                    pero pronto sienten que una oscura presencia los acecha.
+                </p>
+            </div>
+            <!--VHS reseña-->
+            <div class="card">
+                <img src="VHS.webp" alt="poster de VHS">
+                <h3>V/H/S</h3>
+                <p>
+                    Reseña:
+                    Contratada para robar una cinta VHS de una casa alejada, 
+                    una banda de ladrones descubre un cadáver, viejos televisores 
+                    y muchas imágenes encriptadas.
+                </p>
+            </div>
         </section>
 
-        <form action="https://formspree.io/f/xzzeoanv" method="POST">
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-            <input type="email" name="email" id="email" placeholder="Escribe tu email">
-            <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <section class="contacto">
+            <form action="https://formspree.io/f/xzzeoanv" method="POST">
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                <input type="email" name="email" id="email" placeholder="Escribe tu email">
+                <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-    </main>
-    
-    <footer>
-        <p>long live david hasselhoff</p>
-    </footer>
+        <footer class="footer">
+            <p>© 2025 Found Fear. Todos los derechos reservados.</p>
+            <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        </footer>
 
+    </div>
+    <!--Fin Nuevo head, main, menu y footer-->
 </body>
 </html>
