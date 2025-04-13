@@ -4,8 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     text-wrap: normal;
-    overflow-wrap: normal;
-    overflow-x: auto;
 }
 
 body{
@@ -71,11 +69,12 @@ h2,h3 {
 }
 
 .flex-menu, .flex-menu a{
-    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     background-color: #2b2b2b;
     color: white;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
     list-style: none;
     text-decoration: none;
