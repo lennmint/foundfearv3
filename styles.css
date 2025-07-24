@@ -5,17 +5,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .main-container{
     font-family: Quicksand;
     background-color: rgb(29, 29, 29);
-    width: 85%;
-    padding: 10px;
+    width: 90%;
     border: 1px solid rgb(46, 46, 46);
     margin: auto;
     box-sizing: border-box;
     color: white;
+    padding: 10px;
 }
 
 /*todos los contenidos del header en esta sección*/
@@ -82,6 +84,9 @@ h1, h2, h3{
     padding: 1px 10px;
     background: #3d3d3d;
 }
+
+
+
 /*todos los contenidos del menu en esta sección*/
 
 .second-container{
@@ -111,6 +116,87 @@ h1, h2, h3{
 
 }
 
+/*shopping*/
+
+.productos {
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    min-width: 200px;
+    padding: 10px 12px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    text-align: center;
+    position: relative;
+    
+}
+
+.secciones h2 {
+    font-size: 40px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.producto h4 {
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+.producto span {
+    color: #a5a5a5;
+    font-size: 14px;
+}
+
+.producto button {
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    color: #a5a5a5;
+    width: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: Pirata One;
+    font-size: 16px;
+}
+
+.carritoCompras button {
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    color: #a5a5a5;
+    width: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: Pirata One;
+    font-size: 16px;
+}
+
+.carritoCompras p {
+    text-align: start;
+    font-family: Pirata One;
+    font-size: 25px;
+    border: #a3a3a3;
+}
+
+
+
 /*media query*/
 @media only screen and (max-width: 500px) { /*pantallas chicas*/
     body{
@@ -120,6 +206,9 @@ h1, h2, h3{
         grid-template-columns: 1fr;
     }
     .contenido{
+        grid-template-columns: 1fr;
+    }
+    .productos {
         grid-template-columns: 1fr;
     }
 }
@@ -134,6 +223,9 @@ h1, h2, h3{
     .contenido{
         grid-template-columns: 1fr 1fr;
     }
+    .productos {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 1200px) { /*pantallas medianas*/
@@ -145,5 +237,8 @@ h1, h2, h3{
     }
     .contenido{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .productos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
